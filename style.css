@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* NAVBAR */
+
+header{
+    background:#111;
+    padding:15px 40px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    position:relative;
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    padding:8px;
+}
+
+/* DROPDOWN */
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background:white;
+    min-width:150px;
+    top:35px;
+}
+
+.dropdown-content a{
+    color:black;
+    display:block;
+    padding:10px;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+/* HERO SECTION */
+
+.hero{
+    height:90vh;
+    background:linear-gradient(to right,#4facfe,#00f2fe);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    margin:20px 0;
+}
+
+.hero button{
+    padding:12px 25px;
+    border:none;
+    background:#111;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.hero button:hover{
+    background:white;
+    color:black;
+}
+
+/* FEATURES */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:50px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.card i{
+    font-size:40px;
+    margin-bottom:15px;
+    color:#00bcd4;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+}
